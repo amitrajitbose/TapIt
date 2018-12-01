@@ -1,0 +1,90 @@
+* {
+    font-family: raleway, sans-serif;
+    transition: 0.15s;
+}
+
+body {
+    margin:0px;
+}
+
+#toClick {
+    margin:5px;
+    border:#3991d9 solid 5px;
+    border-radius:15px;
+    width:80px;
+    min-height: 80px;
+    color:#3991d9;
+    padding:25px;
+    font-size:50px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+td {
+    text-align: center;
+    width:60px;
+    height:60px;
+    padding:20px;
+    font-size: 40px;
+    border-radius:3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin:5px;
+    color:#3991d9;
+}
+
+td:hover {
+    background:#3991d9;
+    cursor:pointer;
+    color:white;
+}
+td:active {
+    transform: scale(0.9);
+}
+
+#modal,#timer{
+
+    z-index: 3;
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+	}
+
+#timer {
+    background: #da1e1e;
+    font-size:250px;
+    padding-top:10vh;
+    font-family: comic sans ms;
+    color:white;
+}
+
+#gameArena1 {
+    display:inline-block;
+}
+#gameArena1 div{
+    float:left;
+}
+
+.rightAns {
+    background:#2cf008;
+    animation:blob 0.3s ease;
+}
+
+.wrongAns {
+    background:#da1e1e;
+    animation:shake 0.5s ease;
+}
+
+@keyframes blob {
+    0% {transform: scale(1)}
+    45% {transform: scale(1.1)}
+    100% {transform: scale(1)}
+}
+
+@keyframes shake {
+    0% {transform: translateX(0px)}
+    25% {transform: translateX(10px)}
+    50% {transform: translateX(-10px)}
+    75% {transform: translateX(10px)}
+    100% {transform: translateX(0px)}
+    
+}

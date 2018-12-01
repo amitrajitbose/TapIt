@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TapIt - Have Fun!</title>
+	<meta name="Author" content=""/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body onload="startA()"><center>
+    <div id="toClick"></div>
+    <div id="timeLeft"></div>
+    <div id="timer"><center>3</center></div>
+    <div class="arena" id="gameArenaa" style="display: none">
+        <!--Numbers Here -->
+        
+        <table cellspacing=10>
+            <tr>
+                <td id="ta0" onclick="checkAns(this.id)" onclick="checkAns(this.id)"></td>
+                <td id="ta1" onclick="checkAns(this.id)" onclick="checkAns(this.id)"></td>
+                <td id="ta2" onclick="checkAns(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="ta3" onclick="checkAns(this.id)"></td>
+                <td id="ta4" onclick="checkAns(this.id)"></td>
+                <td id="ta5" onclick="checkAns(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="ta6" onclick="checkAns(this.id)"></td>
+                <td id="ta7" onclick="checkAns(this.id)"></td>
+                <td id="ta8" onclick="checkAns(this.id)"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="arena" id="gameArenab" style="display: none">
+        <!--Numbers Here -->
+        <table cellspacing=10>
+            <tr>
+                <td id="tb0" onclick="checkAns(this.id)"></td>
+                <td id="tb1" onclick="checkAns(this.id)"></td>
+                <td id="tb2" onclick="checkAns(this.id)"></td>
+                <td id="tb3" onclick="checkAns(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="tb4" onclick="checkAns(this.id)"></td>
+                <td id="tb5" onclick="checkAns(this.id)"></td>
+                <td id="tb6" onclick="checkAns(this.id)"></td>
+                <td id="tb7" onclick="checkAns(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="tb8" onclick="checkAns(this.id)"></td>
+                <td id="tb9" onclick="checkAns(this.id)"></td>
+                <td id="tb10" onclick="checkAns(this.id)"></td>
+                <td id="tb11" onclick="checkAns(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="tb12" onclick="checkAns(this.id)"></td>
+                <td id="tb13" onclick="checkAns(this.id)"></td>
+                <td id="tb14" onclick="checkAns(this.id)"></td>
+                <td id="tb15" onclick="checkAns(this.id)"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="arena" id="gameArenac" style="display: none">
+        <!--Numbers Here -->
+        <table cellspacing=10>
+            <tr>
+                <td id="tc0" onclick="checkAns(this.id)"></td>
+                <td id="tc1" onclick="checkAns(this.id)"></td>
+                <td id="tc2" onclick="checkAns(this.id)"></td>
+                <td id="tc3" onclick="checkAns(this.id)"></td>
+                <td id="tc4" onclick="checkAns(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="tc5" onclick="checkAns(this.id)"></td>
+                <td id="tc6" onclick="checkAns(this.id)"></td>
+                <td id="tc7" onclick="checkAns(this.id)"></td>
+                <td id="tc8" onclick="checkAns(this.id)"></td>
+                <td id="tc9" onclick="checkAns(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="tc10" onclick="checkAns(this.id)"></td>
+                <td id="tc11" onclick="checkAns(this.id)"></td>
+                <td id="tc12" onclick="checkAns(this.id)"></td>
+                <td id="tc13" onclick="checkAns(this.id)"></td>
+                <td id="tc14" onclick="checkAns(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="tc15" onclick="checkAns(this.id)"></td>
+                <td id="tc16" onclick="checkAns(this.id)"></td>
+                <td id="tc17" onclick="checkAns(this.id)"></td>
+                <td id="tc18" onclick="checkAns(this.id)"></td>
+                <td id="tc19" onclick="checkAns(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="tc20" onclick="checkAns(this.id)"></td>
+                <td id="tc21" onclick="checkAns(this.id)"></td>
+                <td id="tc22" onclick="checkAns(this.id)"></td>
+                <td id="tc23" onclick="checkAns(this.id)"></td>
+                <td id="tc24" onclick="checkAns(this.id)"></td>
+            </tr>
+        </table>
+    </div>
+    <button onclick="showNumbersA()">Start Game 1</button>
+    <button onclick="showNumbersB()">Start Game 2</button>
+    <button onclick="showNumbersC()">Start Game 3</button>
+    <script src="main.js"></script>
+</center>
+</body>
+</html>
+<!-- comomfpkd -->
