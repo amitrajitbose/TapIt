@@ -2,34 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TapIt - Have Fun!</title>
+    <title>TapIt - Keep Tapping!</title>
 	<meta name="Author" content=""/>
+    <link rel="shortcut icon" type="image/png" href="https://png.icons8.com/doodle/50/000000/tea.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Coming+Soon|Raleway" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" type="text/css" href="styleNew.css">
 </head>
-<body onload="startA()"><center>
+<body>
+    <!-- WELCOME -->
+    <div id="One">
+        <br>
+	<br>
+	<!-- Heading -->
+	<center>
+		<div id="mainLogo">
+			<img src="https://localhackday.mlh.io/assets/pages/home/top-left-95c3b9574793f8e079f72ee5fe4cc9b7867363bb0ba7dc530d2b291f1cebeff0.svg" style="float: left; width: 20%; height: auto;">
+			<br>
+			<br>
+			<br>
+	<div class="bordered">
+		<span style="color: #da1e1e; font-size: 120px; font-weight: 900; font-family: 'Coming Soon', cursive;">T</span>
+		<span style="color: #43aaff; font-size: 75px; font-weight: 900; font-family: 'Coming Soon', cursive;">A</span>
+		<span style="color: #ffd400; font-size: 75px; font-family: 'Coming Soon', cursive;; font-weight: 900">P</span>
+		<span style="font-size: 55px; font-weight: 700">-It</span>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div>
+	<img src="https://localhackday.mlh.io/assets/pages/home/top-right-686655152550645a3e2f5e55d0ceb21d82560377b73c306da6f98d424320bccd.svg" style="float: right; width: 20%; height: 50vh;">
+	</div>
+	</center>
+	
+	<!-- Start Button -->
+	<!-- <div>
+	<a href="#" title=""><i class="fa fa-dribbble"></i> Start Here</a>
+	</div> -->
+
+	<a href="#" class="button">
+      <div class="qube">
+         <div class="front" onclick="document.getElementById('One').style.display='none';startGame();"><b>CLICK TO PLAY</b></div>
+         <div class="back"><b>START HERE</b></div>
+      </div>
+   </a>
+	<br>
+	<br>
+	<h1 align="center" style="font-family: 'Coming Soon', cursive;"><u>How To Play</u></h1>
+	<ul id="rules">
+		<li><b>- You Will Be Presented With A Grid At Each Level -</b></li>
+		<li> </li>
+		<li><b>- Tap The Number Shown Above, On The Grid Below -</b></li>
+		<li> </li>
+		<li><b>- Try To Collect Maximum Score In The Given Time -</b></li>
+		<li> </li>
+		<li><b>- Have Fun, Enjoy & Do Share :) -</b></li>
+	</ul>
+        </div>
+	
+    </div>
+    
+    <!-- GAME -->
+    
+    <div id="Two" style="display: none">
+    <div id="timeLeftOut">Time Left<br><span id="timeLeft"></span></div>
+    <center>
+    <span id="tapText" style="padding:10px;font-size:35px; font-family: comic sans ms; color:#3991d9;">Tap..</span>
     <div id="toClick"></div>
-    <div id="timeLeft"></div>
+    
+        <div id="scoreBoard">Score<br><span id="score"></span></div>
+    
     <div id="timer"><center>3</center></div>
+        <br><br>
+        <div id="timeUpText" style="display:none">Oops..Time's up!</div>
+        <div id="endGameText" style="display:none">Congratzz! <br>You made it :)</div>
+        <div id="reset" style="display:none" onclick="reset()">Go to home page</div>
     <div class="arena" id="gameArenaa" style="display: none">
         <!--Numbers Here -->
         
         <table cellspacing=10>
             <tr>
-                <td id="ta0" onclick="checkAns(this.id)" onclick="checkAns(this.id)"></td>
-                <td id="ta1" onclick="checkAns(this.id)" onclick="checkAns(this.id)"></td>
-                <td id="ta2" onclick="checkAns(this.id)"></td>
+                <td id="ta00" onclick="checkAns(this.id)" onclick="checkAns(this.id)"></td>
+                <td id="ta01" onclick="checkAns(this.id)" onclick="checkAns(this.id)"></td>
+                <td id="ta02" onclick="checkAns(this.id)"></td>
             </tr>
             <tr>
-                <td id="ta3" onclick="checkAns(this.id)"></td>
-                <td id="ta4" onclick="checkAns(this.id)"></td>
-                <td id="ta5" onclick="checkAns(this.id)"></td>
+                <td id="ta03" onclick="checkAns(this.id)"></td>
+                <td id="ta04" onclick="checkAns(this.id)"></td>
+                <td id="ta05" onclick="checkAns(this.id)"></td>
             </tr>
             <tr>
-                <td id="ta6" onclick="checkAns(this.id)"></td>
-                <td id="ta7" onclick="checkAns(this.id)"></td>
-                <td id="ta8" onclick="checkAns(this.id)"></td>
+                <td id="ta06" onclick="checkAns(this.id)"></td>
+                <td id="ta07" onclick="checkAns(this.id)"></td>
+                <td id="ta08" onclick="checkAns(this.id)"></td>
             </tr>
         </table>
     </div>
@@ -37,20 +103,20 @@
         <!--Numbers Here -->
         <table cellspacing=10>
             <tr>
-                <td id="tb0" onclick="checkAns(this.id)"></td>
-                <td id="tb1" onclick="checkAns(this.id)"></td>
-                <td id="tb2" onclick="checkAns(this.id)"></td>
-                <td id="tb3" onclick="checkAns(this.id)"></td>
+                <td id="tb00" onclick="checkAns(this.id)"></td>
+                <td id="tb01" onclick="checkAns(this.id)"></td>
+                <td id="tb02" onclick="checkAns(this.id)"></td>
+                <td id="tb03" onclick="checkAns(this.id)"></td>
             </tr>
             <tr>
-                <td id="tb4" onclick="checkAns(this.id)"></td>
-                <td id="tb5" onclick="checkAns(this.id)"></td>
-                <td id="tb6" onclick="checkAns(this.id)"></td>
-                <td id="tb7" onclick="checkAns(this.id)"></td>
+                <td id="tb04" onclick="checkAns(this.id)"></td>
+                <td id="tb05" onclick="checkAns(this.id)"></td>
+                <td id="tb06" onclick="checkAns(this.id)"></td>
+                <td id="tb07" onclick="checkAns(this.id)"></td>
             </tr>
             <tr>
-                <td id="tb8" onclick="checkAns(this.id)"></td>
-                <td id="tb9" onclick="checkAns(this.id)"></td>
+                <td id="tb08" onclick="checkAns(this.id)"></td>
+                <td id="tb09" onclick="checkAns(this.id)"></td>
                 <td id="tb10" onclick="checkAns(this.id)"></td>
                 <td id="tb11" onclick="checkAns(this.id)"></td>
             </tr>
@@ -66,18 +132,18 @@
         <!--Numbers Here -->
         <table cellspacing=10>
             <tr>
-                <td id="tc0" onclick="checkAns(this.id)"></td>
-                <td id="tc1" onclick="checkAns(this.id)"></td>
-                <td id="tc2" onclick="checkAns(this.id)"></td>
-                <td id="tc3" onclick="checkAns(this.id)"></td>
-                <td id="tc4" onclick="checkAns(this.id)"></td>
+                <td id="tc00" onclick="checkAns(this.id)"></td>
+                <td id="tc01" onclick="checkAns(this.id)"></td>
+                <td id="tc02" onclick="checkAns(this.id)"></td>
+                <td id="tc03" onclick="checkAns(this.id)"></td>
+                <td id="tc04" onclick="checkAns(this.id)"></td>
             </tr>
             <tr>
-                <td id="tc5" onclick="checkAns(this.id)"></td>
-                <td id="tc6" onclick="checkAns(this.id)"></td>
-                <td id="tc7" onclick="checkAns(this.id)"></td>
-                <td id="tc8" onclick="checkAns(this.id)"></td>
-                <td id="tc9" onclick="checkAns(this.id)"></td>
+                <td id="tc05" onclick="checkAns(this.id)"></td>
+                <td id="tc06" onclick="checkAns(this.id)"></td>
+                <td id="tc07" onclick="checkAns(this.id)"></td>
+                <td id="tc08" onclick="checkAns(this.id)"></td>
+                <td id="tc09" onclick="checkAns(this.id)"></td>
             </tr>
             <tr>
                 <td id="tc10" onclick="checkAns(this.id)"></td>
@@ -102,11 +168,17 @@
             </tr>
         </table>
     </div>
+        <div style="display: none">
     <button onclick="showNumbersA()">Start Game 1</button>
     <button onclick="showNumbersB()">Start Game 2</button>
     <button onclick="showNumbersC()">Start Game 3</button>
+            </div>
     <script src="main.js"></script>
 </center>
+    </div>
+    <footer>
+		<p><center>Developed with ♥️ by <a href="https://github.com/AnirbanMukherjeeXD" target="_blank">Anirban Mukherjee</a> & <a href="https://github.com/amitrajitbose" target="_blank">Amitrajit Bose</a> @ <a href="https://mlh.io/" target="_blank">Local Hack Day 2018</a></center></p>
+	</footer>
 </body>
 </html>
 <!-- comomfpkd -->
