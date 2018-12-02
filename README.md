@@ -2,7 +2,7 @@
 ### Keep Tapping! 
 --------------------------
 ##### Play Now
-[TAP HERE TO PLAY NOW](https://cdn.staticaly.com/gh/AnirbanMukherjeeXD/TapIt/46352957/index.html)
+[TAP HERE TO PLAY NOW](https://cdn.staticaly.com/gh/amitrajitbose/TapIt/90be9841/index.html)
 ##### Description
 Hi There!
 This repository contains implementation for a simple, clean, interactive, single page, uni-player web application game. We used technologies like HTML, CSS, JavaScript and JQuery for developing the platform. The UI has been intentionally kept minimalistic, bright and colorful which is also quite similar to the [website](https://localhackday.mlh.io/) theme of the event host for the hackathon.
