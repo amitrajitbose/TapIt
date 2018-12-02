@@ -171,8 +171,14 @@ footer{
 
 #rules {
    animation:rise 1.0s ease;
-   list-style: none; display: flex;justify-content: center;flex-direction: column;align-items: center; font-family: 'Coming Soon'!important, cursive!important; font-size: 18px;
-   margin-right: 380px;
+   list-style: none; display: flex;
+   justify-content: center;flex-direction: column;
+   align-items: center; 
+   font-family: 'Coming Soon'!important, cursive!important; 
+   font-size: 14px;
+   padding-left: 10px;
+   padding-right: 20px;
+   
 }
 @keyframes rise {
    0% {transform:scale(0.8);}
@@ -278,10 +284,10 @@ table {
     font-family:comic sans ms;
     background:white;
     text-align: center;
-    width:60px;
-    height:60px;
-    padding:20px;
-    font-size: 40px;
+    width:40px;
+    height:40px;
+    padding:15px;
+    font-size: 30px;
     border-radius:3px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     margin:5px;
