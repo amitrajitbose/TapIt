@@ -302,6 +302,12 @@ table {
 #Two td:active {
     transform: scale(0.9);
 }
+#gameArenab td,#gameArenac td {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    font-size: 30px;
+}
 
 #modal,#timer{
 
